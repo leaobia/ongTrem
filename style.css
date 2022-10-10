@@ -33,19 +33,19 @@ nav ul li a:hover{
     padding-top: 15px;
 
 }
-section{
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/trem2.jpg");
+    color: #ffff;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#home{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/trem2.jpg");
-    color: #ffff;
-    background-size: cover;
-    background-position: center;
+    
 }
 .titulo{
     font-size: 3rem;
@@ -70,4 +70,111 @@ section{
     to{
         border-right-color: transparent;
     }
+}
+
+#about{
+    background-color: #F8CAC1;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.transparente{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 5rem;
+    position: absolute;
+    top: 105%;
+}
+.solid{
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 5.5rem;
+    position: absolute;
+    top: 92%;
+    left: 16%;
+}
+.sobre{
+    position: absolute;
+    top: 135%;
+    left: 10%;
+    width: 20vw;
+    text-align: start;
+    line-height: 5vh; 
+    font-size: 20px;
+}
+.nos{
+    position: absolute;
+    top: 155%;
+    right: 10%;
+    width: 20vw;
+    text-align: start;
+    line-height: 5vh; 
+    font-size: 20px;
+}
+#us{
+    width: 100%;
+    min-height: 90vh;
+    background: linear-gradient(72deg, #82BBC2, #F7A3A2);
+}
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 190%;
+    left: 20%;
+    
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    display: flex;
+}
+.bar{
+    width: 100px;
+    height: 24px;
+    border: 2px solid #ffff;
+    margin: 5px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.bar:hover{
+    background-color: #fff;
+    transition: .4s ease-in;
+}
+input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
 }
