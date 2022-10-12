@@ -8,7 +8,7 @@
 
 nav{
     width: 100%;
-    position: absolute;
+    position: fixed;
     background: linear-gradient(rgba(0,0,0,0.7), transparent);
     text-align: center;
 }
@@ -151,7 +151,8 @@ nav ul li a:hover{
     background-color: #fff;
     transition: .4s ease-in;
 }
-input{
+
+.in1{
     display: none;
 }
 .slides{
@@ -284,3 +285,96 @@ input{
   .card-2 .card-name {
     color: #292E40;
   }
+  #contact{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2eee3;
+
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 945px;
+    height: 474px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6)
+  }
+  .subscribe__title{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .subscribe__copy{
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 53px;
+    line-height: 1.5;
+  }
+  .form{
+    margin-bottom: 25px;
+  }
+  .form__email{
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: 1px solid #f2eee3;
+    width: 431px;
+    font-size: 18px;
+    color: #0f121f;
+  }
+  .form__email:focus{
+     outline: 1px solid black;
+  }
+
+  .form__button{
+    background-color: #F8CAC1;
+    border: 1px solid transparent;
+    padding: 10px;
+    width: 244px;
+    height: 65px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  .form__button:hover{
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .notice{
+    padding-top: 55px;
+  }
+  .social-media{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 5vh;
+    text-decoration: none;
+    width: 5px;
+    gap: 5px;
+    place-items: center;
+    font-size: 44px;
+    position: absolute;
+    left:70px;
+    top: 408%;
+    }
+
+  
+    .twitter{
+        color: #1DA1F2;
+    }
+    .github{
+        color: #000;
+    }
+    .figma{
+        color: #000;
+    }
+    .instagram{
+        color: #000;
+    }
